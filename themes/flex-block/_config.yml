@@ -7,6 +7,8 @@ menu:
 # 主页banner图
 banner: /top_background.png
 
+#logo: /avatar.png
+
 # 站点通知信息
 notice: 站点通知信息
 
@@ -94,9 +96,7 @@ favicon: /avatar.ico
 social_icon:
   enable: true
   icons:
-    ins     :
-    zhihu   :
-    weibo   : 
+    steam   : https://steamcommunity.com/profiles/76561198308398351/
     github  : https://github.com/Kiyuiro
     twitter : https://twitter.com/Kiyuiru
     bilibili: https://space.bilibili.com/90619204
