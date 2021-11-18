@@ -13,8 +13,6 @@ mathjax: true
   * 例如: `$$ \Delta = \frac{-b\pm\sqrt{b^2-4ac}}{2a} $$`
   $$ \Delta = \frac{-b\pm\sqrt{b^2-4ac}}{2a} $$
 
-$\$
-
 ## LaTex 基础语法
 
 ###  上下标
