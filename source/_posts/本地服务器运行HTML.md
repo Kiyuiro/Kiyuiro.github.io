@@ -2,7 +2,7 @@
 title: 本地服务器运行HTML
 date: 2021-11-09 08:37:06
 tags: [HTML, Node]
-cover: /images/本地服务器运行HTML/cover.jpg
+cover: https://cdn.jsdelivr.net/gh/Kiyuiro/Images@master/本地服务器运行HTML/cover-2021-11-18-11-03-07-71f9e96715716d8aebafcf10f15f2a40-1978b0.jpg
 ---
 
 ## 原因
