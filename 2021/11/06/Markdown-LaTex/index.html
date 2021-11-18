@@ -135,7 +135,196 @@
 
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <p><img src="https://cdn.jsdelivr.net/gh/Kiyuiro/Images@master/本地服务器运行HTML/cover-2021-11-18-11-03-07-71f9e96715716d8aebafcf10f15f2a40-1978b0.jpg" /></p>
+        <h2 id="公式排版">公式排版</h2>
+<ul>
+<li>行内公式: 使用 <code>$ $</code> 包裹公式
+<ul>
+<li>例如 <code>$y=x^2+k$</code> <span class="math inline">\(\to\)</span> <span class="math inline">\(y=x^2+k\)</span></li>
+</ul></li>
+<li>独立公式: 使用 <code>$$  $$</code> 包裹公式
+<ul>
+<li>例如: <code>$$ \Delta = \frac&#123;-b\pm\sqrt&#123;b^2-4ac&#125;&#125;&#123;2a&#125; $$</code> <span class="math display">\[ \Delta = \frac{-b\pm\sqrt{b^2-4ac}}{2a} \]</span></li>
+</ul></li>
+</ul>
+<p>$$</p>
+<h2 id="latex-基础语法">LaTex 基础语法</h2>
+<h3 id="上下标">上下标</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">LaTex 语法</th>
+<th style="text-align: center;">效果</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><code>x_&#123;1&#125;</code></td>
+<td style="text-align: center;"><span class="math inline">\(x_{1}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>x^&#123;a&#125;</code></td>
+<td style="text-align: center;"><span class="math inline">\(x^{a}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>x^&#123;a&#125;_&#123;1&#125;</code></td>
+<td style="text-align: center;"><span class="math inline">\(x^{a}_{1}\)</span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="根式和分式">根式和分式</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">LaTex 语法</th>
+<th style="text-align: center;">效果</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><code>\displaystyle</code></td>
+<td style="text-align: center;">修复大小(建议每个公式开头添加)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>\frac&#123;a&#125;&#123;b&#125;</code></td>
+<td style="text-align: center;"><span class="math inline">\(\frac{a}{b}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>\displaystyle\frac&#123;a&#125;&#123;b&#125;</code></td>
+<td style="text-align: center;"><span class="math inline">\(\displaystyle\frac{a}{b}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>\sqrt&#123;a&#125;</code></td>
+<td style="text-align: center;"><span class="math inline">\(\sqrt{a}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>\sqrt[3]&#123;a&#125;</code></td>
+<td style="text-align: center;"><span class="math inline">\(\sqrt[3]{a}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>\surd[a^2+b^2]</code></td>
+<td style="text-align: center;"><span class="math inline">\(\surd[a^2+b^2]\)</span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="常见运算符">常见运算符</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><code>\le</code></td>
+<td style="text-align: center;"><span class="math inline">\(\le\)</span></td>
+<td style="text-align: center;"><code>\ge</code></td>
+<td style="text-align: center;"><span class="math inline">\(\ge\)</span></td>
+<td style="text-align: center;"><code>\equiv</code></td>
+<td style="text-align: center;"><span class="math inline">\(\equiv\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>\pm</code></td>
+<td style="text-align: center;"><span class="math inline">\(\pm\)</span></td>
+<td style="text-align: center;"><code>\cdot</code></td>
+<td style="text-align: center;"><span class="math inline">\(\cdot\)</span></td>
+<td style="text-align: center;"><code>\div</code></td>
+<td style="text-align: center;"><span class="math inline">\(\div\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>\cup</code></td>
+<td style="text-align: center;"><span class="math inline">\(\cup\)</span></td>
+<td style="text-align: center;"><code>\cap</code></td>
+<td style="text-align: center;"><span class="math inline">\(\cap\)</span></td>
+<td style="text-align: center;"><code>\angle</code></td>
+<td style="text-align: center;"><span class="math inline">\(\angle\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>\lor</code></td>
+<td style="text-align: center;"><span class="math inline">\(\lor\)</span></td>
+<td style="text-align: center;"><code>\land</code></td>
+<td style="text-align: center;"><span class="math inline">\(\land\)</span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>\forall</code></td>
+<td style="text-align: center;"><span class="math inline">\(\forall\)</span></td>
+<td style="text-align: center;"><code>\exists</code></td>
+<td style="text-align: center;"><span class="math inline">\(\exists\)</span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>\gets</code></td>
+<td style="text-align: center;"><span class="math inline">\(\gets\)</span></td>
+<td style="text-align: center;"><code>\to</code></td>
+<td style="text-align: center;"><span class="math inline">\(\to\)</span></td>
+<td style="text-align: center;"><code>\leftrightarrow</code></td>
+<td style="text-align: center;"><span class="math inline">\(\leftrightarrow\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>\uparrow</code></td>
+<td style="text-align: center;"><span class="math inline">\(\uparrow\)</span></td>
+<td style="text-align: center;"><code>\downarrow</code></td>
+<td style="text-align: center;"><span class="math inline">\(\downarrow\)</span></td>
+<td style="text-align: center;"><code>\updownarrow</code></td>
+<td style="text-align: center;"><span class="math inline">\(\updownarrow\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>\lfloor</code></td>
+<td style="text-align: center;"><span class="math inline">\(\lfloor\)</span></td>
+<td style="text-align: center;"><code>\rfloor</code></td>
+<td style="text-align: center;"><span class="math inline">\(\rfloor\)</span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>\lceil</code></td>
+<td style="text-align: center;"><span class="math inline">\(\lceil\)</span></td>
+<td style="text-align: center;"><code>\rceil</code></td>
+<td style="text-align: center;"><span class="math inline">\(\rceil\)</span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="一些特殊运算">一些特殊运算</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">LaTex 语法</th>
+<th style="text-align: center;">效果</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><code>\overline&#123;m+n&#125;</code></td>
+<td style="text-align: center;"><span class="math inline">\(\overline{m+n}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>\underline&#123;m+n&#125;</code></td>
+<td style="text-align: center;"><span class="math inline">\(\underline{m+n}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>\displaystyle\sum_&#123;i=0&#125;^&#123;n&#125;i</code></td>
+<td style="text-align: center;"><span class="math inline">\(\displaystyle\sum_{i=0}^{n}i\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>\displaystyle\int_&#123;0&#125;^&#123;\frac&#123;\pi&#125;&#123;2&#125;&#125;</code></td>
+<td style="text-align: center;"><span class="math inline">\(\displaystyle\int_{0}^{\frac{\pi}{2}}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>\displaystyle\prod_&#123;a&#125;^&#123;b&#125;</code></td>
+<td style="text-align: center;"><span class="math inline">\(\displaystyle\prod_{a}^{b}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>\displaystyle\lim_&#123;x \to \infty&#125;</code></td>
+<td style="text-align: center;"><span class="math inline">\(\displaystyle\lim_{x\to\infty}\)</span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="附表">附表</h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Kiyuiro/Images@master/Markdown-LaTex/希腊字母-2021-11-18-12-32-49-73005227c712bd276e3c34bc4f8ef0d9-4bcaa6.png" /></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Kiyuiro/Images@master/Markdown-LaTex/AMS二元运算符-2021-11-18-12-32-49-6e3b459593953db5eb8c236fc88e8fca-c1f1c4.png" /></p>
 
       </section>
 
@@ -208,13 +397,13 @@
         <svg class="icon icon-article" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
   <path d="M240.51564747 647.74217627h196.07203239c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806V165.10332731c0-33.18142087-30.16492806-60.32985613-60.32985612-60.32985611H245.04038668C225.43318342 104.7734712 210.35071939 119.85593522 210.35071939 139.46313845V617.57724821c0 16.59071043 13.57421762 30.16492806 30.16492808 30.16492806z m663.62841731-452.47392089v482.63884894c0 33.18142087-27.14843525 60.32985613-60.32985612 60.32985613H180.18579134c-33.18142087 0-60.32985613-27.14843525-60.32985612-60.32985613V195.26825538c-49.77213131 0-90.49478418 40.72265287-90.49478417 90.49478417v452.4739209c0 49.77213131 40.72265287 90.49478418 90.49478417 90.49478417h286.56681657c16.59071043 0 30.16492806 13.57421762 30.16492807 30.16492807s13.57421762 30.16492806 30.16492805 30.16492806h90.49478418c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806s13.57421762-30.16492806 30.16492807-30.16492807h286.56681657c49.77213131 0 90.49478418-40.72265287 90.49478417-90.49478417V285.76303955c0-49.77213131-40.72265287-90.49478418-90.49478417-90.49478417zM587.41232014 647.74217627h191.54729318c19.60720323 0 34.68966726-15.08246403 34.68966729-34.68966727V134.93839925c0-16.59071043-13.57421762-30.16492806-30.16492808-30.16492805H617.57724821c-30.16492806 0-60.32985613 27.14843525-60.32985612 60.32985611v452.4739209c0 16.59071043 13.57421762 30.16492806 30.16492805 30.16492806z" fill="currentColor"></path>
 </svg>
-        <span>7</span>
+        <span>6</span>
       </div>
       <div class="count-box--item">
         <svg class="icon icon-tags" viewBox="0 0 1098 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
   <path d="M283.42180005 272q0-28.38857157-20.09142843-48.48000001t-48.47999998-20.09142842-48.48000002 20.09142842-20.09142846 48.48000001 20.09142846 48.48 48.48000002 20.09142843 48.47999998-20.09142843 20.09142843-48.48zM855.0332285 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.03999997 263.58857157q-20.9142853 19.81714313-48.75428534 19.81714312-28.38857157 0-48.20571468-19.81714312l-383.04-383.58857157q-20.36571468-19.81714313-34.55999999-54.10285688t-14.19428534-62.6742853l0-222.85714313q0-27.84000002 20.36571469-48.20571469t48.2057147-20.36571466l222.85714313 0q28.38857157 0 62.6742853 14.19428529t54.65142842 34.55999999l383.04000001 382.49142843q19.81714313 20.9142853 19.81714314 48.75428532zM1060.74751475 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.04 263.58857157q-20.9142853 19.81714313-48.75428531 19.81714312-19.26857155 0-31.61142843-7.47428531t-28.38857159-24.13714314l251.79428534-251.7942853q19.81714313-19.81714313 19.81714308-48.20571469 0-27.84000002-19.81714308-48.75428531l-383.04000001-382.49142845q-20.36571468-20.36571468-54.65142842-34.55999999t-62.67428532-14.19428534l120 0q28.38857157 0 62.67428532 14.19428534t54.65142842 34.55999999l383.03999998 382.49142845q19.81714313 20.9142853 19.81714314 48.75428531z" fill="currentColor"></path>
 </svg>
-        9
+        7
       </div>
       <div class="count-box--item">
         <svg class="icon icon-link" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" >
@@ -251,7 +440,7 @@
   </div>
   <div class="widget-body">
     <div class="tags-cloud">
-      <a href="/tags/HTML/" style="font-size: 10px;" class="tags-cloud-0">HTML</a> <a href="/tags/IDEA/" style="font-size: 10px;" class="tags-cloud-0">IDEA</a> <a href="/tags/Java/" style="font-size: 10px;" class="tags-cloud-0">Java</a> <a href="/tags/Markdown/" style="font-size: 10px;" class="tags-cloud-0">Markdown</a> <a href="/tags/MySql/" style="font-size: 10px;" class="tags-cloud-0">MySql</a> <a href="/tags/Node/" style="font-size: 10px;" class="tags-cloud-0">Node</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 20px;" class="tags-cloud-10">数学</a> <a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 10px;" class="tags-cloud-0">测试</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 10px;" class="tags-cloud-0">算法</a>
+      <a href="/tags/HTML/" style="font-size: 10px;" class="tags-cloud-0">HTML</a> <a href="/tags/Java/" style="font-size: 10px;" class="tags-cloud-0">Java</a> <a href="/tags/Markdown/" style="font-size: 10px;" class="tags-cloud-0">Markdown</a> <a href="/tags/Node/" style="font-size: 10px;" class="tags-cloud-0">Node</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 20px;" class="tags-cloud-10">数学</a> <a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 10px;" class="tags-cloud-0">测试</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 10px;" class="tags-cloud-0">算法</a>
     </div>
   </div>
 </section>
