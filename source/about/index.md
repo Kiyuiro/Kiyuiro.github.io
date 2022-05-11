@@ -6,7 +6,9 @@ mathjax: true
 
 ## Info
 
-### 等我想想怎么写(●ˇ∀ˇ●)
+### 一些小游戏
+[扫雷](https://kiyuiro.github.io/Minesweeper)
+[俄罗斯方块](https://kiyuiro.github.io/Tetris)
 
 ## Game
 
