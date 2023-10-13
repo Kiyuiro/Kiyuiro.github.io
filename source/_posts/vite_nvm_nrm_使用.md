@@ -9,7 +9,6 @@ cover: https://cdn.jsdelivr.net/gh/Kiyuiro/Images@master/image/cover-2021-11-18-
 
 ### vite init
 
----
 
 安装 `vite` 的最新版本
 
@@ -20,7 +19,6 @@ yarn create vite
 
 ### nvm
 
----
 
 [nvm下载地址](https://github.com/coreybutler/nvm-windows/releases)
 
