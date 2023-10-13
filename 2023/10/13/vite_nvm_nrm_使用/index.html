@@ -24,7 +24,7 @@
 
   
 
-  <title>image | Kiyuiro</title>
+  <title>Vite/nvm/nrm 使用 | Kiyuiro</title>
 
   
 
@@ -98,18 +98,18 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">image</h1>
+          <h1 class="title-wrap">Vite/nvm/nrm 使用</h1>
           <h2 class="title-sub-wrap">
             <strong>Kiyuiro</strong>
             &nbsp&nbsp&nbsp
-            <time  class="article-date" datetime="2020-07-11T03:54:00.000Z" itemprop="datePublished">2020-07-11</time>
+            <time  class="article-date" datetime="2023-10-13T03:54:00.000Z" itemprop="datePublished">2023-10-13</time>
           </h2>
           <ul class="wrap-list dark">
   
 </ul>
           <ul class="wrap-list dark">
   
-    <li><a href="/tags/%E6%B5%8B%E8%AF%95/">🏷️ 测试</a></li>
+    <li><a href="/tags/Node/">🏷️ Node</a></li>
   
 </ul>
         </div>
@@ -133,7 +133,36 @@
 
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <p><img src="https://cdn.jsdelivr.net/gh/Kiyuiro/Images@master/image/cover-2021-11-18-11-02-58-3aa107dbe9c59b9861a4ec6ea5752d77-5f239d.png" /></p>
+        <h2 id="vite">Vite</h2>
+<h3 id="vite-init">vite init</h3>
+<hr />
+<p>安装 <code>vite</code> 的最新版本</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs powershell">npm init vite@latest<br>yarn create vite<br></code></pre></td></tr></table></figure>
+<h3 id="nvm">nvm</h3>
+<hr />
+<p><a target="_blank" rel="noopener" href="https://github.com/coreybutler/nvm-windows/releases">nvm下载地址</a></p>
+<p>查看所有安装的 <code>node</code> 版本</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell">nvm list<br></code></pre></td></tr></table></figure>
+<p>查看所有 <code>node</code> 的官方版本</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell">nvm list available<br></code></pre></td></tr></table></figure>
+<p>安装对应版本号的 <code>node</code></p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell">nvm install &lt;版本号&gt;<br></code></pre></td></tr></table></figure>
+<p>切换 <code>node</code> 版本</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell">nvm use &lt;版本号&gt;<br></code></pre></td></tr></table></figure>
+<h3 id="nrm">nrm</h3>
+<p><code>nrm</code> 安装</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell">npm install <span class="hljs-literal">-g</span> nrm<br></code></pre></td></tr></table></figure>
+<p>查看所有源，星号表示当前使用源</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell">nrm <span class="hljs-built_in">ls</span><br></code></pre></td></tr></table></figure>
+<blockquote>
+<p>默认有的源 npm ---------- https://registry.npmjs.org/ yarn --------- https://registry.yarnpkg.com/ tencent ------ https://mirrors.cloud.tencent.com/npm/ cnpm --------- https://r.cnpmjs.org/ taobao ------- https://registry.npmmirror.com/ npmMirror ---- https://skimdb.npmjs.com/registry/</p>
+</blockquote>
+<p>使用源</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell">nrm use &lt;名称&gt;<br></code></pre></td></tr></table></figure>
+<p>添加源</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell">nrm add &lt;名称&gt; &lt;源&gt;<br></code></pre></td></tr></table></figure>
+<p>测试连接速度</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell">nrm test &lt;名称&gt;<br></code></pre></td></tr></table></figure>
 
       </section>
 
@@ -141,32 +170,16 @@
       
         <nav class="article-nav">
           
-            <div class="article-nav-item layout-padding">
-  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
-    
-      <div class="card-cover" background-image-lazy data-img="https://cdn.jsdelivr.net/gh/Kiyuiro/Images@master/回溯算法/cover-2021-11-18-11-08-11-eabcde123d6a8c5d7d560baab0d2ab4f-2c0de6.png"></div>
-    
-    <div class="card-text">
-      
-        <a href="/2020/08/25/%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">回溯算法</h2>
-        </a>
-      
-      <div class="card-text--row">Newer</div>
-    </div>
-  </article>
-</div>
-          
           
             <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
     
-      <div class="card-cover" background-image-lazy data-img="https://cdn.jsdelivr.net/gh/Kiyuiro/Images@master/第一篇博客/cover-2021-11-18-11-05-32-7ac576854cd3cd35aab9174bdfd212b0-8b587f.png"></div>
+      <div class="card-cover" background-image-lazy data-img="https://cdn.jsdelivr.net/gh/Kiyuiro/Images@master/本地服务器运行HTML/cover-2021-11-18-11-03-07-71f9e96715716d8aebafcf10f15f2a40-1978b0.jpg"></div>
     
     <div class="card-text">
       
-        <a href="/2020/07/11/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">第一篇博客</h2>
+        <a href="/2021/11/09/%E6%9C%AC%E5%9C%B0%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%90%E8%A1%8CHTML/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">本地服务器运行HTML</h2>
         </a>
       
       <div class="card-text--row">Older</div>
