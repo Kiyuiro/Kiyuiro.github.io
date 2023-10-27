@@ -1,7 +1,9 @@
 <section class="widget-author widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
   <div class="widget-body">
     <% if (theme.author.avatar) { %>
-      <img src="<%= theme.author.avatar %>" class="soft-size--round soft-style--box" alt="<%= theme.author.name %>">
+      <div class="widget-body-img soft-size--round soft-style--box">
+        <img src="<%= theme.author.avatar %>" class="" alt="<%= theme.author.name %>">
+      </div>
     <% } %>
     <% if (theme.author.name) { %>
       <h2><%= theme.author.name %></h2>

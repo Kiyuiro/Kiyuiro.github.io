@@ -2,7 +2,7 @@
 title: Vite/nvm/nrm 使用
 date: 2023-10-13 11:54:00
 tags: [Node]
-cover: https://api.onedrive.com/v1.0/shares/s!Andl82vyabVsiNEpqZeRG-PWr2hdIA/root/content
+cover: https://api.onedrive.com/v1.0/shares/s!Andl82vyabVsiNEtUPLdBAU_o0Vkqw/root/content
 ---
 
 ## Vite

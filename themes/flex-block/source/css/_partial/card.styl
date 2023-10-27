@@ -9,6 +9,14 @@
   position: relative
   height: 100%
 
+  &:hover .card-cover {
+    transform: scale(1.2);
+  }
+
+  &:hover .card-cover::after {
+    opacity: 0.6;
+  }
+
   .card-cover {
     position: absolute;
     top: 0;
@@ -18,6 +26,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    transition: transform 0.5s ease;
 
     &::after {
       content: "";
